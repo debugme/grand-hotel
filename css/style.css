@@ -1,0 +1,87 @@
+/* Global Variables */
+:root {
+  --grey-100: #eeeeee;
+  --grey-700: #555555;
+  --grey-800: #777777;
+  --grey-900: #222222;
+
+  --orange-100: #deaa86;
+}
+
+/* Common Styles */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 8rem;
+  height: 100%;
+  background-color: var(--grey-100);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Sidebar/MenuIcon Styles */
+.menu-icon {
+  margin-top: 3rem;
+  cursor: pointer;
+}
+
+.menu-icon:hover .line {
+  width: 2.5rem;
+}
+
+.line {
+  height: 0.2rem;
+  width: 2.5rem;
+  background-color: var(--grey-900);
+  margin-bottom: 0.6rem;
+  border-radius: 2px;
+}
+
+.line-1,
+.line-3 {
+  width: 1.8rem;
+  transition: width 0.2s;
+}
+
+/* Sidebar/SocialIcons Styles */
+.social-icons-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: solid red 1px; */
+}
+
+.social-link {
+  font-size: 2rem;
+  color: var(--grey-800);
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: var(--orange-100);
+}
+
+/* Sidebar/Year Styles */
+.year {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--grey-700);
+}
