@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position - Floats</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        background-color: #ccc;
+        border-top: solid 20px blue;
+        border-bottom: solid 20px black;
+        overflow: auto; /* stops container from having height zero when all of its child elements are floated*/
+      }
+      .left {
+        background-color: orangered;
+        width: 100px;
+        height: 100px;
+        float: left;
+      }
+      .right {
+        background-color: green;
+        width: 100px;
+        height: 100px;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left"></div>
+      <div class="right"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anchors + Pseudo-classes</title>
+    <style>
+      /* pseudo-classes: define special state of element; one colon */
+      .anchor-state {
+        margin-bottom: 30px;
+      }
+      /* LVHA = LOOK VERY HAPPY ASAD! */
+      /* normal state of a link */
+      anchor-state > a:link {
+        font-size: 35px;
+        text-decoration: none;
+        color: green;
+      }
+      /* state of link after it has been clicked */
+      anchor-state > a:visited {
+        color: goldenrod;
+      }
+      /* state of link on a mouse over */
+      anchor-state > a:hover {
+        color: grey;
+      }
+      /* state of link when user clicks and holds on it */
+      anchor-state > a:active {
+        color: skyblue;
+      }
+
+      /* pseudo-elements: define style for specific part of an element; two colons */
+    </style>
+    <style>
+      .dropdown-content > a {
+        display: none;
+      }
+      .dropdown:hover > .dropdown-content > a {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="anchor-state">
+      <a href="https://www.google.com">Click here</a>
+    </div>
+    <div class="dropdown">
+      <a href="#">Items</a>
+      <div class="dropdown-content">
+        <a href="#">item 1</a>
+        <a href="#">item 2</a>
+        <a href="#">item 3</a>
+      </div>
+    </div>
+  </body>
+</html>

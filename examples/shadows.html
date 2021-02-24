@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shadows</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+      .heading {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+          'Lucida Sans', Arial, sans-serif;
+        font-size: 55px;
+        text-align: center;
+        color: #555;
+      }
+      .card {
+        width: 400px;
+        margin: 100px auto;
+        background-color: #ccc;
+        padding: 5px;
+        text-align: center;
+      }
+      img {
+        width: 100%;
+      }
+    </style>
+    <style>
+      .text-shadow {
+        /* 
+          3px: how much to move right
+          3px: how much to move down
+          10px: how much to blur
+          #888: what colour to use for the shadow
+        */
+        text-shadow: 3px 3px 10px #888;
+      }
+      .card-shadow {
+        box-shadow: 5px 5px 10px #777;
+      }
+      .card-shadow:hover {
+        box-shadow: 10px 10px 20px #aaa;
+      }
+    </style>
+  </head>
+  <body class="container">
+    <h1 class="heading text-shadow">This is heading with shadow</h1>
+    <div class="card card-shadow">
+      <img src="img/image 1.jpeg" alt="image" />
+      <h2>My Class</h2>
+    </div>
+  </body>
+</html>

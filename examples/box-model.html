@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model = content + padding + border + margin</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      h1 {
+        /* border-width: 5px;
+        border-style: solid;
+        border-color: red; */
+        border: 5px solid red;
+
+        /* padding-top: 30px;
+        padding-right: 50px;
+        padding-bottom: 70px;
+        padding-left: 90px; */
+        /* padding: 30px 50px 70px 90px; */
+        padding: 100px;
+
+        /* margin-top: 50px;
+        margin-right: 100px;
+        margin-bottom: 150px;
+        margin-left: 200px; */
+        /* margin: 50px 100px 150px 200px; */
+        margin: 100px auto; /* auto only works for left and right on margin; it does NOT work for top or bottom */
+
+        /* CONTENT-BOX: content used to determine element width and height (padding and border are ignored) */
+        /* box-sizing: content-box; */
+        /* BORDER-BOX: content + padding + border used to determine element width and height */
+        box-sizing: border-box;
+        height: 300px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Box Model</h1>
+  </body>
+</html>

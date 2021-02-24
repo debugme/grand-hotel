@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradients</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .gradient {
+        width: 700px;
+        height: 400px;
+        margin: 100px auto;
+
+        /* how to apply different types of linear gradients */
+        /* background-image: linear-gradient(to bottom, yellow, green); */
+        /* background-image: linear-gradient(to right, yellow, green); */
+        /* background-image: linear-gradient(to left, yellow, green); */
+        /* background-image: linear-gradient(to top, yellow, green); */
+        /* background-image: linear-gradient(to right bottom, yellow, green); */
+        /* background-image: linear-gradient(
+          to right bottom,
+          yellow,
+          green,
+          red,
+          orange,
+          purple,
+          blue
+        ); */
+
+        /* how to blend in a gradient with an image */
+        background-image: linear-gradient(
+            rgba(0, 255, 0, 0.1),
+            rgba(0, 255, 0, 0.2)
+          ),
+          url('img/image\ 1.jpeg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gradient"></div>
+  </body>
+</html>
