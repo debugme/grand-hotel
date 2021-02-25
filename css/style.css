@@ -1,6 +1,8 @@
 /* Global Variables */
 :root {
   --grey-100: #eeeeee;
+  --grey-200: #dddddd;
+  --grey-300: #333333;
   --grey-700: #555555;
   --grey-800: #777777;
   --grey-900: #222222;
@@ -113,7 +115,7 @@ body {
   width: 40rem;
   height: 100%;
   background-image: linear-gradient(to top, var(--black-100), var(--black-200)),
-    url('/img/nav-bg.jpeg');
+    url('../img/nav-bg.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -237,4 +239,93 @@ body {
   color: white;
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
+}
+
+/* Header Styles */
+.header {
+  margin-left: 8rem;
+  height: 100vh;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('../img/header-1.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.brand {
+  display: flex;
+  cursor: pointer;
+}
+
+.hotel-heading {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.7rem;
+  font-weight: 400;
+  color: var(--orange-100);
+  letter-spacing: 0.2rem;
+}
+
+.banner {
+  color: var(--grey-200);
+  height: 65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-heading {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 7rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  animation-name: anim;
+  animation-duration: 2s;
+}
+
+.banner-paragraph {
+  font-size: 3.5rem;
+  font-weight: var(--black-300);
+  animation-name: anim;
+  animation-delay: 0.5s;
+  animation-duration: 1.5s;
+  animation-fill-mode: backwards;
+}
+
+.banner-button {
+  width: 21rem;
+  padding: 1.2rem 2rem;
+  font-size: rem;
+  color: var(--grey-300);
+  letter-spacing: 0.1rem;
+  border: none;
+  border-radius: 10rem;
+  outline: none;
+  background-image: linear-gradient(to right, gold, goldenrod);
+  cursor: pointer;
+  animation-name: anim;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+}
+
+.banner-button:hover {
+  background-image: linear-gradient(to left, gold, goldenrod);
+}
+
+.banner-button:active {
+  transform: translateY(0.2rem);
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
