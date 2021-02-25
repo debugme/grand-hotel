@@ -14,12 +14,16 @@
   --black-200: rgba(34, 32, 41, 0.8);
   --black-300: rgba(0, 0, 0, 0.3);
   --black-400: rgba(0, 0, 0, 0.1);
+  --black-500: rgba(0, 0, 0, 0.4);
 }
 
 /* Common Styles */
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
-  box-sizing: border-box;
 }
 
 body {
@@ -263,6 +267,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .brand {
@@ -366,10 +371,6 @@ body {
   padding: 10rem;
 }
 
-.about-us-images {
-  flex: 1 1;
-}
-
 .about-us-heading {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 4rem;
@@ -378,8 +379,6 @@ body {
   color: var(--grey-700);
 }
 
-.underline {
-}
 .small-underline {
   width: 9rem;
   height: 0.1rem;
@@ -428,13 +427,33 @@ body {
   margin-left: 1.5rem;
 }
 
+.about-us-images {
+  flex: 1 1;
+  position: relative;
+}
+
 .image {
+  width: 32rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 3rem 6rem var(--black-500);
+  border-radius: 0.4rem;
+  border: 0.2rem solid var(--orange-400);
 }
+
 .image-1 {
+  transform: translate(-20%, -90%);
 }
+
 .image-2 {
+  transform: translate(-70%, -70%);
 }
+
 .image-3 {
+  transform: translate(-50%, -50%);
 }
+
 .image-4 {
+  transform: translate(-30%, -30%);
 }
